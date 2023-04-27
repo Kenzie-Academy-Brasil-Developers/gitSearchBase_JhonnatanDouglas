@@ -5,10 +5,10 @@ const handleProjectPage = () => {
     const buttons = document.querySelectorAll('.button__secondary');
     const respositoriesList = JSON.parse(localStorage.getItem('respositoryList'));
 
-    respositoriesList.forEach(repository => {
-        buttons.forEach(button => {
+    respositoriesList.forEach((repository, i, arrayList) => {
+        buttons.forEach((button, j) => {
             button.addEventListener('click', () => {
-                open(repository.url, '_blank');
+                open(arrayList[j].url, '_blank');
             });
         });
     });
