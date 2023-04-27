@@ -8,15 +8,32 @@
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="./styles/error.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+
+    <script type="module" src="./scripts/error.js" defer></script>
 
     <title>Git Search - User Not Found</title>
   </head>
   <body>
-
-    <script type="module" src="../scripts/error.js"></script>
+    <main class="main-error__container">
+      <section>
+        <div class="info__error">
+          <div>
+            <h1>Ooops!</h1>
+            <p>Não encotramos o usuário que você procurou, <span>vamos tentar novamente.</span></p>
+            <button class="button__primary button__home">Nova Busca</button>
+          </div>
+        </div>
+        <div class="image__error">
+          <figure>
+            <img src="../assets/icons/Warning.svg" alt="">
+          </figure>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

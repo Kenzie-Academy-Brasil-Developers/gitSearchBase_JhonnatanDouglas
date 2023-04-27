@@ -1,0 +1,83 @@
+.button__default {
+    width: 10.625rem;
+    height: 2.5rem;
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-7);
+    color: var(--color-grey-7);
+    background: rgba(255, 255, 255, 0.08);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+}
+
+.button__default:hover {
+    color: var(--color-grey-7);
+    background-color: var(--color-brand-2);
+    border: 0.0625rem solid var(--color-brand-2);
+    transition: 0.5s;
+}
+
+.button__primary {
+    width: 19.6875rem;
+    height: 2.5rem; 
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+    background-color: var(--color-brand-2);
+    border-radius: var(--border-radius-3);
+    cursor: pointer;
+}
+
+.button__primary:hover {
+    color: var(--color-grey-7);
+    background-color: var(--color-brand-1);
+    transition: 0.5s;
+}
+
+.button__secondary {
+    width: 19.6875rem;
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+    background-color: var(--color-grey-2);
+    border: 0.0625rem solid var(--color-grey-7);
+    border-radius: var(--border-radius-3);
+    cursor: pointer;
+}
+
+.button__secondary:hover {
+    color: var(--color-grey-7);
+    background-color: var(--color-brand-2);
+    border: 0.0625rem solid var(--color-brand-2);
+    transition: 0.5s;
+}
+
+.form__user > button {
+
+}
+
+.header-user__container > div > button {
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-7);
+    color: var(--color-grey-7);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-1);
+}
+
+.main-user__container > ul > li > button {
+    width: 5.9375rem;
+    height: 1.875rem;
+    line-height: var(--line-height-5);
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-7);
+}
+
+.info__error > div > button {
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-4);
+    height: 3.75rem;
+    border-radius: var(--border-radius-1);
+}

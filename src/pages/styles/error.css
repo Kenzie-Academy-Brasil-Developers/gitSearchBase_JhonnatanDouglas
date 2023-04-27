@@ -1,0 +1,67 @@
+/* ERROR PAGE */
+
+.main-error__container {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    background-color: var(--color-grey-2);
+}
+
+.main-error__container > section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 54.375rem;
+    height: 23.75rem;
+}
+
+.info__error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 23.75rem;
+}
+
+.info__error > div {
+    width: 21.375rem;
+}
+
+.info__error > div > h1 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    color: var(--color-grey-7);
+}
+
+.info__error > div > p {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-6);
+    line-height: var(--line-height-3);
+    margin: 1.25rem 0rem 0.625rem;
+    color: var(--color-grey-5);
+}
+
+.info__error > div > p > span {
+    color: var(--color-grey-7);
+}
+
+.image__error {
+    width: 50%;
+    height: 23.75rem;
+}
+
+.image__error > figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 21.875rem;
+    background-color: var(--color-brand-2);
+    border-radius: var(--border-radius-2);
+    box-shadow: 1.5625rem 1.5625rem 0rem var(--color-purple);
+}
+
+.image__error > figure > img {
+    height: 6.25rem;
+}

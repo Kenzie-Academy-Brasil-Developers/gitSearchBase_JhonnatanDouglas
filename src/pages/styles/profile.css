@@ -1,0 +1,102 @@
+/* PROFILE PAGE */
+
+.header-user__container {
+    margin: 3.75rem auto 4.375rem auto;
+    width: 49.0625rem;
+}
+
+.header-user__container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49.0625rem;
+}
+
+.header-user__container > div > figure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5);
+}
+
+.header-user__container > div > figure > img {
+    width: 5rem;
+    height: 5rem;
+    border: 0.125rem solid var(--color-brand-2);
+    border-radius: var(--border-radius-img);
+}
+
+.header-user__container > div > figure > h1 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-2);
+    color: var(--color-grey-7);
+}
+
+.main-user__container {
+    margin: 0rem auto 0rem auto;
+    width: 49.0625rem;
+}
+
+.main-user__container > ul  {
+    display: flex;
+    padding: 0rem 0rem 3.125rem;
+    flex-wrap: wrap;
+    gap: var(--gap-4);
+}
+
+.main-user__container > ul > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 23.75rem;
+    height: 15.3125rem;
+    padding: 1.5625rem 2.5rem;
+    background: var(--color-grey-2);
+    border: 0.125rem solid var(--color-grey-4);
+    border-radius: var(--border-radius-1);
+    gap: var(--gap-3);
+}
+
+.main-user__container > ul > li:hover {
+    background: var(--color-grey-1);
+    border: 0.125rem solid var(--color-grey-7);
+    transition: 0.5s;
+}
+
+.main-user__container > ul > li > h2 {
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-3);
+    color: var(--color-grey-7);
+}
+
+.main-user__container > ul > li > p {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-5);
+}
+
+.empty__projects {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.9375rem;
+    border: 0.125rem dashed var(--color-grey-4);
+    gap: var(--gap-3);
+}
+
+.empty__projects > h1 {
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-2);
+    color: var(--color-grey-7);
+}
+
+.empty__projects > p {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-5);
+}

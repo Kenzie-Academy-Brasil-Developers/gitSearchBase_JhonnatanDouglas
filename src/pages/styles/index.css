@@ -1,0 +1,100 @@
+/* HOME PAGE */
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section__left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-brand-1);
+    gap: var(--gap-1);
+}
+
+.section__left > div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 7.5rem auto 7.5rem;
+    width: 26.875rem;
+    gap: var(--gap-2);
+}
+
+.section__left > div > h1 {
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+}
+
+.section__left > div > p {
+    margin-bottom: 5rem;
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+}
+
+.section__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-grey-2);
+    gap: var(--gap-1);
+}
+
+.section__right > div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 7.5rem auto 7.5rem;
+    width: 19.6875rem;
+}
+
+.section__right > div > h2 {
+    margin-top: 0.625rem;
+    margin-bottom: 2.8125rem;
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+}
+
+.form__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap-6);
+}
+
+.form__user > label {
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-default);
+    color: var(--color-grey-7);
+}
+
+.form__user > input {
+    margin-bottom: 0.3125rem;
+    padding-left: 0.625rem;
+    width: 100%;
+    height: 2.5rem;
+    text-align: left;
+    color: var(--color-grey-5);
+    background: var(--color-grey-1);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--border-radius-3);
+}
+
+.form__user > input::placeholder {
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-default);
+    color: rgba(255, 255, 255, 0.4);
+}
