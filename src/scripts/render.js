@@ -1,4 +1,5 @@
-export function createHeader(tittle, image) {
+
+function createHeader(tittle, image) {
     const divTag = document.querySelector('.header-user__container > div');
 
     const figureTag = document.createElement('figure');

@@ -33,6 +33,7 @@ export const userRepositoriesInfo = async () => {
     })
     .catch(error => {
         console.error(error);
+        location.replace('./src/pages/error.html');
     })
 
     return userRepository;
@@ -40,7 +41,6 @@ export const userRepositoriesInfo = async () => {
 
 export const userProfileInfo = async () => {
     const userValue = localStorage.getItem('userName');
-    await userRepositoriesInfo();
 
     const userProfile = await fetch(`${baseURL}/users/${userValue}`, {
         method: 'GET'
@@ -54,7 +54,6 @@ export const userProfileInfo = async () => {
     .then(user => {
         const userTittle = localStorage.setItem('userTittle', user.name);
         const userImage = localStorage.setItem('userImage', user.avatar_url);
-        location.replace('./src/pages/profile.html');
     })
     .catch(error => {
         console.error(error);

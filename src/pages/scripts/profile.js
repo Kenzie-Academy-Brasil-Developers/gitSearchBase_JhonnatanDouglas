@@ -1,5 +1,12 @@
 import {renderHeaderProfile, renderRepositories} from '../../scripts/render.js';
-import {handleNewSearch} from './error.js';
+
+const handleNewSearch = () => {
+    const button = document.querySelector('.button__home');
+    button.addEventListener('click', () => {
+        window.localStorage.clear();
+        window.location.replace('../../index.html');
+    });
+};
 
 const handleProjectPage = () => {
     const buttons = document.querySelectorAll('.button__secondary');
@@ -27,6 +34,6 @@ const handleEmptyRepository = () => {
 
 renderHeaderProfile();
 renderRepositories();
-handleNewSearch();
 handleProjectPage();
+handleNewSearch();
 handleEmptyRepository();

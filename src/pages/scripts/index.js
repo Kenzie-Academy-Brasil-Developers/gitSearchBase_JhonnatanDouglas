@@ -1,4 +1,4 @@
-import {userProfileInfo} from '../../scripts/requests.js';
+import {userProfileInfo, userRepositoriesInfo} from '../../scripts/requests.js';
 
 const handleSearchUser = () => {
     const button = document.querySelector('.form__user > button');
@@ -12,6 +12,9 @@ const handleSearchUser = () => {
 
         localStorage.setItem('userName', userInput.trim());
         await userProfileInfo();
+        await userRepositoriesInfo();
+
+        location.replace('./src/pages/profile.html');
     });
 };
 
