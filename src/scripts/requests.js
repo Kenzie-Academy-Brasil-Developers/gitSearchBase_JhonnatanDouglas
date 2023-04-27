@@ -47,7 +47,7 @@ export const userProfileInfo = async () => {
     })
     .then(response => {
         if(!response.ok) {
-            throw new Error('Não foi possível acessar do usuário');
+            throw new Error('Não foi possível acessar o usuário');
         }
         return response.json();
     })
@@ -58,7 +58,6 @@ export const userProfileInfo = async () => {
     })
     .catch(error => {
         console.error(error);
-        console.log(error);
         location.replace('./src/pages/error.html');
     })
 
