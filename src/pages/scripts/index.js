@@ -12,6 +12,7 @@ const handleSearchUser = () => {
 
         localStorage.setItem('userName', userInput.trim());
         await userProfileInfo();
+        await userRepositoriesInfo();
         
         location.replace('./src/pages/profile.html');
     });

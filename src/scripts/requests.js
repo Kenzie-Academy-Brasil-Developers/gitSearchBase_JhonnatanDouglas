@@ -56,9 +56,8 @@ export const userProfileInfo = async () => {
     })
     .catch(error => {
         console.error(error);
-        location.replace('./src/pages/error.html');
+        return location.replace('./src/pages/error.html');
     })
 
-    await userRepositoriesInfo();
     return userProfile;
 };
