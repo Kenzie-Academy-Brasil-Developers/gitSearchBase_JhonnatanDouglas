@@ -1,4 +1,4 @@
-import {userProfileInfo, userRepositoriesInfo} from '../../scripts/requests.js';
+import { userProfileInfo } from '../../scripts/requests.js';
 
 const handleSearchUser = () => {
     const button = document.querySelector('.form__user > button');

@@ -1,4 +1,4 @@
-import {renderHeaderProfile, renderRepositories} from '../../scripts/render.js';
+import { renderHeaderProfile, renderRepositories } from '../../scripts/render.js';
 
 const handleNewSearch = () => {
     const button = document.querySelector('.button__home');

@@ -1,4 +1,3 @@
-
 function createHeader(tittle, image) {
     const divTag = document.querySelector('.header-user__container > div');
 
