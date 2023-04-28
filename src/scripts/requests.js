@@ -19,7 +19,7 @@ export const userRepositoriesInfo = async () => {
             if(repository.description === null) {
                 return infoRepository = {
                     "name": repository.name, 
-                    "description": "Sem descrição", 
+                    "description": "OBS: Este desenvolvedor ainda não postou uma descrição para este repositório", 
                     "url": repository.html_url
                 };
             };
@@ -30,7 +30,7 @@ export const userRepositoriesInfo = async () => {
             };
         });
         localStorage.setItem('respositoryList', JSON.stringify(repositoryMap));
-        location.replace('./src/pages/profile.html');
+        location.replace('./src/pages/profile.html'); 
     })
     .catch(error => {
         console.error(error);
@@ -60,6 +60,5 @@ export const userProfileInfo = async () => {
         return location.replace('./src/pages/error.html');
     })
 
-    await userRepositoriesInfo();
     return userProfile;
 };

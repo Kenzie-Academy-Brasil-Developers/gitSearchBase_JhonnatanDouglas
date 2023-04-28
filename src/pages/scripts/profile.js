@@ -21,7 +21,7 @@ const handleProjectPage = () => {
     });
 };
 
-const handleEmptyRepository = () => {
+const emptyRepository = () => {
     const list = document.querySelector('.main-user__container > ul');
     const emptyRepository = document.querySelector('.empty__projects');
 
@@ -36,4 +36,4 @@ renderHeaderProfile();
 renderRepositories();
 handleProjectPage();
 handleNewSearch();
-handleEmptyRepository();
+emptyRepository();
