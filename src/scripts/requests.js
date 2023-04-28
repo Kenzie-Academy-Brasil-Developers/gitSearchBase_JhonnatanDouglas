@@ -30,6 +30,7 @@ export const userRepositoriesInfo = async () => {
             };
         });
         localStorage.setItem('respositoryList', JSON.stringify(repositoryMap));
+        location.replace('./src/pages/profile.html');
     })
     .catch(error => {
         console.error(error);
