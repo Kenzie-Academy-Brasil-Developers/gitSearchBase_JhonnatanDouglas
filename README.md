@@ -1,4 +1,4 @@
-# **Nome do Projeto:** 🏁 Entrega: Git Search
+# 🏁 Entrega: Git Search
 
 ### :date: **Período do Projeto:** Módulo 2 - Semana 5
 ### :iphone: **Mobile First =** False
